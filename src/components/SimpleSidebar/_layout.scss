@@ -1,0 +1,24 @@
+div.sidebar {
+  height: 100vh;
+  background: linear-gradient(
+    $primary-transparent,
+    $primary-transparent
+  ), url('../../assets/img/background.png') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.img {
+  width: 23rem;
+}
+
+.figure {
+  text-align: center;
+}
+
+.caption {
+  color: $light;
+  font-size: 1.8rem;
+}
