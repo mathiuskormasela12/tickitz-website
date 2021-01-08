@@ -1,0 +1,81 @@
+header.header {
+  h3 {
+    color: $title-color;
+    margin-bottom: 1.1rem;
+  }
+
+  p {
+    color: #AAAAAA;
+    font-size: 1.2rem;
+  }
+}
+
+.flexContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label.label {
+  color: $label-color;
+}
+
+.control {
+  margin-bottom: 1rem;
+  line-height: 3.5;
+
+  &:last-child {
+    margin-top: 2.2rem;
+  }
+}
+
+input.input {
+  height: 3.5rem;
+  background-color: $light;
+  border: 1px solid $input-color;
+  outline: none;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input.input::placeholder {
+  color: $placeholder-color;
+}
+
+button.btn {
+  height: 3.5rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: $primary;
+  border-radius: 4px;
+  color: $light;
+  cursor: pointer;
+  font-family: mulish-regular;
+  transition: background-color .5s;
+
+  &:hover {
+    background-color: #2A00A2;
+  }
+
+  &:focus {
+    background-color: $primary;
+    box-shadow: 0 0 0 4.4px #D6CAFA;
+  }
+}
+
+p.textFoot {
+  color: #8692A6;
+  text-align: center;
+  margin-top: 2.2rem;
+}
+
+a.link {
+  color: $primary;
+  font-weight: 500;
+}
