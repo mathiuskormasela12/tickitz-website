@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .socialMedia {
     justify-content: center;
   }
@@ -23,3 +23,30 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .socialMedia {
+    justify-content: center;
+  }
+  .btnAppend {
+    width: 3.8rem;
+    justify-content: center;
+    span {
+      display: none;
+    }
+
+    button.socialMediaBtn {
+      height: 3.8rem;
+    }
+
+    img.img {
+      width: 1.8rem;
+      left:auto;
+    }
+
+    &:last-child {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
