@@ -10,15 +10,6 @@ header.header {
   }
 }
 
-%btnStyling {
-  height: 3.5rem;
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: mulish-regular;
-}
-
 .flexContainer {
   height: 100vh;
   display: flex;
@@ -56,7 +47,7 @@ input.input::placeholder {
 }
 
 button.btn {
-  @extend %btnStyling;
+  @include btnStyling();
   width: 100%;
   font-size: 1.2rem;
   background-color: $primary;
@@ -84,33 +75,55 @@ a.link {
   font-weight: 500;
 }
 
-.socialMedia {
+.hrContainer {
   margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  p {
+    color: #AAAAAA;
+  }
+
+  div.hr {
+    &:nth-child(1) {
+      width: 37%;
+    }
+    &:nth-child(2) {
+      width: 20%;
+      text-align: center;
+    }
+    &:nth-child(3) {
+      width: 37%;
+    }
+  }
+
+  hr {
+    width: 100%;
+    background-color: $input-color;
+    border: none;
+    height: 0.5px;
+  }
 }
 
-button.socialMediaBtn {
-  @extend %btnStyling;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-  color: #A0A3BD;
-  background-color: white;
-  font-size: 1.1rem;
-  width: 32%;
-  border: 1px solid black;
-  // padding: 1rem 2.5rem;
-  // height: auto !important;
-  // position: relative;
-  display: flex;
-  box-sizing: border-box;
-  // padding: 0 1.5rem;
-  align-items: center;
-  justify-content: space-evenly;
+.img {
+  display: none;
+  margin-bottom: 1.7rem;
 
   img {
-    // position: absolute;
-    // position: relative;
-    // left: -1.5rem;
-    // width: 1.3rem;
+    width: 9rem;
+    position: relative;
+    left: -.5rem;
+  }
+}
+
+.append {
+  position: relative;
+
+  .eye {
+    position: absolute;
+    right: 1.1rem;
+    top: .4rem;
+    cursor: pointer;
   }
 }

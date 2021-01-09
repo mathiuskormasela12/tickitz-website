@@ -3,7 +3,7 @@ div.container {
   margin: 0 auto;
 
   &Login {
-    width: 80%;
+    width: 72%;
     margin: 0 auto;
   }
 }
@@ -12,5 +12,23 @@ div.container {
   div.container {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  div.container {
+    &Login {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px) {
+  div.container {
+    &Login {
+      width: 50%;
+      margin: 0 auto;
+    }
   }
 }

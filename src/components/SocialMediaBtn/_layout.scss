@@ -1,0 +1,37 @@
+.socialMedia {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button.socialMediaBtn {
+  @include btnStyling();
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  color: #A0A3BD;
+  background-color: white;
+  font-size: 1.2rem;
+  width: 40%;
+  // border: 1px solid black;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+
+.btnAppend {
+  position: relative;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  
+  img.img {
+    position: absolute;
+    left: 1rem;  
+  }
+
+  &:last-child {
+    span {
+      position: relative;
+      left: .7rem;
+    }
+  }
+}

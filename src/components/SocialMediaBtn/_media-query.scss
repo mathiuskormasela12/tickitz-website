@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px) {
+  .socialMedia {
+    justify-content: center;
+  }
+  .btnAppend {
+    width: 4rem;
+    justify-content: center;
+    span {
+      display: none;
+    }
+
+    button.socialMediaBtn {
+      height: 4rem;
+    }
+
+    img.img {
+      width: 2rem;
+      left:auto;
+    }
+
+    &:last-child {
+      margin-left: 1.5rem;
+    }
+  }
+}
