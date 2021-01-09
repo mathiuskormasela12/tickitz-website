@@ -8,6 +8,10 @@ import { Container } from '../container/Container';
 // Import SCSS
 import styled from './style.module.scss';
 
+// Import images
+import facebook from '../../assets/img/facebook.png';
+import google from '../../assets/img/google.png';
+
 export function LoginForm() {
   return (
     <React.Fragment>
@@ -45,6 +49,16 @@ export function LoginForm() {
             <p className={ styled.textFoot }>
               Forgot your password? <Link to="/forgot" className={ styled.link }>Reset now</Link>
             </p>
+            <div className={ styled.socialMedia}>
+              <button type="button" className={styled.socialMediaBtn}>
+                <img src={ google } className={ styled.img } alt="Google" />
+                <span className={ styled.socialMediaText }>Google</span>
+              </button>
+              <button type="button" className={styled.socialMediaBtn}>
+                <img src={ facebook } className={ styled.img } alt="Facebook" />
+                <span className={ styled.socialMediaText }>Facebook</span>
+              </button>
+            </div>
           </main>
         </div>
       </Container>

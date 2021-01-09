@@ -10,6 +10,15 @@ header.header {
   }
 }
 
+%btnStyling {
+  height: 3.5rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: mulish-regular;
+}
+
 .flexContainer {
   height: 100vh;
   display: flex;
@@ -47,16 +56,11 @@ input.input::placeholder {
 }
 
 button.btn {
-  height: 3.5rem;
-  outline: none;
-  border: none;
+  @extend %btnStyling;
   width: 100%;
   font-size: 1.2rem;
   background-color: $primary;
-  border-radius: 4px;
   color: $light;
-  cursor: pointer;
-  font-family: mulish-regular;
   transition: background-color .5s;
 
   &:hover {
@@ -78,4 +82,35 @@ p.textFoot {
 a.link {
   color: $primary;
   font-weight: 500;
+}
+
+.socialMedia {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button.socialMediaBtn {
+  @extend %btnStyling;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  color: #A0A3BD;
+  background-color: white;
+  font-size: 1.1rem;
+  width: 32%;
+  border: 1px solid black;
+  // padding: 1rem 2.5rem;
+  // height: auto !important;
+  // position: relative;
+  display: flex;
+  box-sizing: border-box;
+  // padding: 0 1.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+
+  img {
+    // position: absolute;
+    // position: relative;
+    // left: -1.5rem;
+    // width: 1.3rem;
+  }
 }
