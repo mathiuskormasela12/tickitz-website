@@ -17,6 +17,9 @@
     height: auto;
     padding: 3rem 0;
   }
+  .control:nth-child(3) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 920px) and (min-height: 667px) {

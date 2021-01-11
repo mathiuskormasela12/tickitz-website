@@ -73,6 +73,15 @@ export function RegisterForm() {
                 </div>
               </div>
               <div className={ styled.control }>
+                <input type="checkbox" value="agree" className={ styled.checkbox } id="agreement" />
+                <label htmlFor="agreement">
+                  <span className={ styled.checkbox } htmlFor="agreement"></span>                
+                  <span className={ styled.checkboxText }>
+                    I agree to terms & conditions
+                  </span>
+                </label>
+              </div>
+              <div className={ styled.control }>
                 <button type="button" className={ styled.btn }>
                   Join for free now
                 </button>

@@ -24,11 +24,19 @@ label.label {
 }
 
 .control {
+  position: relative;
   margin-bottom: .8rem;
   line-height: 3.5;
 
   &:last-child {
     margin-top: 2.2rem;
+  }
+
+  &:nth-child(3) {
+    label {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -132,4 +140,43 @@ a.link {
   div.imgEye {
     width: 1.3rem;
   }
+}
+
+input.checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+span.checkbox {
+  display: inline-block;
+  border: 1px solid $primary;
+  height: .9rem;
+  width: .9rem;
+
+  &:after {
+    content: '';
+    position: relative;
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 7px;
+    display: none;
+    border: solid $light;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+input.checkbox:checked + label span.checkbox {
+  background-color: $primary;
+}
+
+input.checkbox:checked + label span.checkbox::after {
+  content: '';
+  display: block;
+}
+
+span.checkboxText {
+  color: #696F79;
+  margin-left: .7rem;
 }
