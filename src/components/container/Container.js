@@ -7,7 +7,7 @@ import styled from './style.module.scss';
 export function Container(props) {
   return (
     <React.Fragment>
-      <div className={ (props.component !== 'login') ? ((props.component !== 'forgot') ? styled.container : styled.containerForgot) : styled.containerLogin}>
+      <div className={ (props.component !== 'login') ? ((props.component !== 'forgot') ? ((props.component === 'navbar') ? styled.containerNavbar : styled.container) : styled.containerForgot) : styled.containerLogin}>
         { props.children }
       </div>
     </React.Fragment>

@@ -11,12 +11,21 @@ div.container {
     width: 73%;
     margin: 0 auto;
   }
+
+  &Navbar {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
   div.container {
     width: 90%;
     margin: 0 auto;
+
+    &Navbar {
+      width: 100%;
+    }
   }
 }
 

@@ -1,0 +1,103 @@
+// @media screen and (max-width: 600px) {
+//   .container {
+//     width: 100% !important;
+//   }
+//   a.brand {
+//     background-color: royalblue;
+//     box-sizing: border-box;
+//     padding-left: 2rem;
+//     order: 1;
+//     width: 100% !important;
+//   }
+//   ul.navList, div.navSide {
+//     display: block !important;
+//     width: 100% !important;
+//     order: 3;
+//   }
+//   div.link {
+//     width: 100% !important;
+//     line-height: 6rem;
+//     text-align: center;
+//     display: block !important;
+//     overflow: hidden;
+//     border-top: 0.5px solid $input-color;
+//     border-bottom: 0.5px solid $input-color;
+//   }
+//   div.dropdown {
+//     display: block !important;
+//   }
+//   ul.dropdownList {
+//     position: static !important;
+//     width: 100% !important;
+//     border-radius: 0 !important;
+//     border: none !important;
+//     border-top: 0.5px solid $input-color !important;
+//     border-bottom: 0.5px solid $input-color !important;
+//   }
+//   .search {
+//     margin: 0 !important;
+//   }
+//   .btnBar {
+//     margin: 0 !important;
+//   }
+//   li.navItem {
+//     border-top: 0.5px solid $input-color;
+//     border-bottom: 0.5px solid $input-color;
+//     border-collapse: collapse !important;
+//     width: 100% !important;
+//     text-align: center;
+//     font-weight: bold;
+//   }
+//   div.navSide {
+//     // display: none !important;
+//     order: 2;
+//   }
+// }
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  a.brand {
+    width: 80% !important;
+    order: 1;
+  }
+  ul.navList {
+    order: 3;
+  }
+  .burger {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: $nav-height;
+  }
+  ul.navList, div.navSide {
+    width: 100% !important;
+  }
+  a.brand {
+   box-sizing: border-box;
+   padding-left: 1.5rem;
+ }
+  ul.navList {
+    flex-direction: column;
+
+    li.navItem {
+      text-align: center;
+      border: 1px solid $input-color;
+      width: 100%;
+
+      &:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6rem;
+      }
+    }
+  }
+  div.navSide {
+    flex-direction: column;
+    display: none !important
+  }
+}

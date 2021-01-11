@@ -12,7 +12,7 @@ export function HeroHead(props) {
     <React.Fragment>
       <div className={ styled.hero }>
         <Navbar />
-        <h4>Home</h4>
+        {/* <h4>Home</h4> */}
       </div>
     </React.Fragment>
   );
