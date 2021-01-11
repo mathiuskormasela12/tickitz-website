@@ -1,0 +1,50 @@
+.container {
+  margin-top: 2rem;
+}
+
+ul.ul {
+  list-style: none;
+  color: $light;
+
+  li.li {
+    display: flex;
+    align-items: center;
+    // width: 48%;
+    margin-bottom: 1.7rem;
+    position: relative;
+
+    .circle {
+      border-radius: 50%;
+      background-color: transparent;
+      line-height: 2.2rem;
+      text-align: center;
+      width: 2.2rem;
+      margin-right: 1.5rem;
+      border: 1px solid $light;
+    }
+
+    &:first-child {
+      .circle {
+        color: #6e6e74;
+        background-color: $light;
+      }
+    }
+  }
+}
+
+p {
+  text-align: left;
+}
+
+span.line {
+  display: inline-block;
+  // top: 3.1rem;
+  // left: .3rem;
+  top: 3.12rem;
+  left: .3rem;
+  width: 1.7rem;
+  height: .1rem;
+  background-color: $light;
+  position: absolute;
+  transform: rotate(90deg);
+}

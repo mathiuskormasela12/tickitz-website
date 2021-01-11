@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+  .img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .img {
+    display: block;
+  }
+  .flexContainer {
+    height: auto;
+    padding: 3rem 0 !important;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-height: 667px) {
+  .flexContainer {
+    padding-top: 8rem;
+  }
+}
