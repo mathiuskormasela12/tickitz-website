@@ -10,7 +10,7 @@ import CircleInstruction from '../CircleInstruction/CircleInstruction';
 
 import img from '../../assets/img/tickitz.svg';
 
-export function ComplexSidebar() {
+export function ComplexSidebar(props) {
   return (
     <React.Fragment>
       <div className={ styled.sidebar }>
@@ -20,14 +20,13 @@ export function ComplexSidebar() {
           </figure>
           <div>
             <h1 className={ styled.title }>
-              Lets reset your password
+              { props.title }
             </h1>
             <p className={ styled.subtitle }>
-              To be able to use your account again, please
-              complete the following steps.
+              { props.subtitle }
             </p>
           </div>
-          <CircleInstruction />
+          <CircleInstruction instructions={ props.instructions } />
         </Container>
       </div>
     </React.Fragment>

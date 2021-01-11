@@ -8,14 +8,13 @@ import Col from '../grids/col-auth/Col';
 // Import all components
 import {
   ComplexSidebar,
-  ForgotForm
+  RegisterForm
 } from '../components';
 
-function Forgot() {
+function Register() {
   const instructions = [
-    'Fill your complete email',
-    'Activate your email',
-    'Enter your new password',
+    'Fill your additional details',
+    'Activate your account',
     'Done'
   ];
 
@@ -24,18 +23,18 @@ function Forgot() {
       <Row>
         <Col>
           <ComplexSidebar 
-            title="Lets reset your password" 
-            subtitle="To be able to use your account again, please
-              complete the following steps." 
+            title="Lets build your account" 
+            subtitle="To be a loyal moviegoer and access all of features,
+your details are required." 
             instructions={ instructions }
           />
         </Col>
         <Col>
-          <ForgotForm />
+          <RegisterForm />
         </Col>
       </Row>
     </React.Fragment>
   );
 }
 
-export default Forgot;
+export default Register;
