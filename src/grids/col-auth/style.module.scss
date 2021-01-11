@@ -70,3 +70,14 @@ div.col:last-child {
     width: 40%;
   } 
 }
+
+@media screen and (min-width: 768px) and (max-width: 920px) and (min-height: 700px) {
+  div.col:first-child {
+    display: block;
+    width: 50% !important;
+  }
+  
+  div.col:last-child {
+    width: 50% !important;
+  }  
+}

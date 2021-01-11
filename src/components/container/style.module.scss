@@ -32,3 +32,12 @@ div.container {
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 920px) and (min-height: 700px) {
+  div.container {
+    &Login {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}
