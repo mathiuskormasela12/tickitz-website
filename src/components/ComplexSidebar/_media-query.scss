@@ -9,3 +9,9 @@
     width: 20rem;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  p.subtitle {
+    width: 25rem;
+  } 
+}
