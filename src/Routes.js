@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Context from './Context';
 
 // Import all views
+import Home from './views/Home';
 import Login from './views/Login';
 import Register from './views/Register';
 import Forgot from './views/Forgot';
@@ -17,7 +18,8 @@ function Routes() {
     <BrowserRouter>
       <Switch>
         <ShowPasswordProvider>
-          <Route path="/login" exact component={ Login } />
+          <Route path="/" exact component={ Home } />
+          <Route path="/login" component={ Login } />
           <Route path="/register" component={ Register } />
           <Route path="/forgot" component={ Forgot } />
         </ShowPasswordProvider>

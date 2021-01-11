@@ -1,0 +1,20 @@
+$nav-height: 4rem;
+nav.nav {
+  height: $nav-height;
+  width: 100%;
+  position: fixed;
+  background-color: red;
+
+  .container {
+    height: $nav-height;
+    display: flex;
+  }
+
+  a.brand {
+    line-height: $nav-height;
+  }
+
+  a.brand > img { 
+    width: 8rem;
+  }
+}
