@@ -7,3 +7,12 @@
   font-family: mulish-regular;
 }
 
+@mixin inputStyling($height, $width) {
+  height: $height;
+  width: $width;
+  outline: none;
+  border: 1px solid $input-color;
+  border-radius: 4px;
+  font-family: mulish-regular;
+}
+
